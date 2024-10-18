@@ -1,4 +1,4 @@
-import PageWrapper from "@/app/wrapper";
+import PageWrapper from "@/components/ui/wrapper";
 
 function HomePage() {
   return (

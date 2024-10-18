@@ -1,6 +1,6 @@
+import Logo from "@/assets/logo.svg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/logo-green.png";
 
 function Navbar() {
   return (

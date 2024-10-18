@@ -1,8 +1,8 @@
+import Logo from "@/assets/Logo.svg";
 import { Button } from "@/components/ui/button";
 import { FcGoogle } from "react-icons/fc";
 import { SiGithub } from "react-icons/si";
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/logo-green.png";
 
 function Auth() {
   const continueAuth = () => {
@@ -10,7 +10,7 @@ function Auth() {
   };
 
   return (
-    <div className="w-full px-5 py-8 rounded-xl">
+    <div className="w-full md:max-w-screen-sm mx-auto  px-5 py-8 rounded-xl">
       <div>
         <img src={Logo} alt="okr-logo" className="size-12" />
         <div className="mt-10">
