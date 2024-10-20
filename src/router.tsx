@@ -1,6 +1,7 @@
 import AuthPage from "@/components/auth/auth";
 import HomePage from "@/components/homepage/homepage";
 import Navbar from "@/components/homepage/navbar";
+import CreateCompany from "@/pages/CreateCompany";
 import { createBrowserRouter } from "react-router-dom";
 
 export const APP_ROUTER = createBrowserRouter([
@@ -19,5 +20,11 @@ export const APP_ROUTER = createBrowserRouter([
   {
     path: "/login",
     element: <AuthPage />,
+  },
+
+  // Route for creating a company
+  {
+    path: "/create-company",
+    element: <CreateCompany />,
   },
 ]);

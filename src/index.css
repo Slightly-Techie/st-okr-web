@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,6 @@
   font-style: normal;
   color: black;
 }
-
 
 @layer base {
   :root {
@@ -74,12 +73,59 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.page-container {
+  @apply relative mx-auto flex min-h-screen max-w-6xl items-center justify-center px-4;
+
+  .logo {
+    @apply absolute left-4 top-4 size-12 md:top-8;
+  }
+
+  .title {
+    @apply mb-[6px] text-center text-3xl font-bold;
+  }
+
+  .desc {
+    @apply mb-[24px] text-center text-xl opacity-50;
+  }
+
+  form {
+    @apply flex flex-col gap-4;
+  }
+
+  .form-group {
+    @apply flex flex-col gap-2;
+  }
+
+  label:not(.text-destructive) {
+    @apply text-[#00000099];
+  }
+
+  label {
+    @apply font-normal;
+  }
+
+  input {
+    @apply h-12 rounded-xl border border-[#D9D9D9] p-4 text-[#00000099] shadow-none outline-none;
+  }
+
+  button {
+    @apply h-12 rounded-xl;
+  }
+
+  #company-type button {
+    @apply shadow-none;
+  }
+
+  button[type="submit"] {
+    @apply mt-2 bg-[#047358] px-3 py-4 font-bold hover:bg-opacity-90;
   }
 }
