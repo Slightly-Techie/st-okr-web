@@ -21,15 +21,16 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import PageWrapper from "@/components/ui/wrapper";
-import "./CreateCompany.css";
 
 // Dummy value
 const companyTypes = [{ value: "finance", label: "Finance" }];
 
 const FormSchema = z.object({
-  companyName: z.string({
-    required_error: "Please enter the name of the company.",
-  }),
+  companyName: z
+    .string({
+      required_error: "Please enter the name of the company.",
+    })
+    .min(6, "Company name must be at least 6 characters long"),
   companyDescription: z.string({
     required_error: "Please provide a description of your company.",
   }),

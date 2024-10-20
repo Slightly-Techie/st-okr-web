@@ -1,7 +1,7 @@
 import AuthPage from "@/components/auth/auth";
-import CreateCompany from "@/components/auth/CreateCompany";
 import HomePage from "@/components/homepage/homepage";
 import Navbar from "@/components/homepage/navbar";
+import CreateCompany from "@/pages/CreateCompany";
 import { createBrowserRouter } from "react-router-dom";
 
 export const APP_ROUTER = createBrowserRouter([
