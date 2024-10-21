@@ -12,7 +12,7 @@ export default function Organizations() {
 
 function OrganizationItem() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between gap-2.5 items-center">
       <div className="flex items-center gap-3">
         <img
           src="https://s3-alpha-sig.figma.com/img/c948/26f7/a9f6c6b78e733be9ef5cf337357e7b31?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QxeKIg11uC9xLn0oeKA181ewWVL5gTigF3GI5yvhSHZcRzbpKyYgUrmBp0JuZPSBg0YIsk9dyy38iMDjA3Q34lH2NcWKV22iK1XKB~sFMI149uoZZyS5PhiWCj3WYpw~JkKZknNDLyMio4qqDU-E6~FZGtzJeBNPkzNBxTJoZ7A43BpMdCvu7GGFnideU3hcwdsw98ArOvsza69YfZKbjFaqUCUZW~GlceTe1FNnYZBV-0us~OAiVIaWzqn53dTvU6BJNuO3BkCm5N~ktNZtyl-3qzA0VJT7k5W0aCxJZKkllbhZjyOppGdjvijjX9TFCLp~QstT2X23S3HWn5wFAg__"

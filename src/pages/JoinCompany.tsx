@@ -24,7 +24,7 @@ export default function JoinCompany() {
             </p>
           </div>
           <Packages />
-          <main className="mt-8 w-screen mr-4 md:max-w-[800px] border border-black/10 rounded-lg">
+          <main className="mt-8 w-[90vw] mr-4 md:max-w-[800px] border border-black/10 rounded-lg">
             <div className="w-full border-b">
               <div className="w-full relative  border-b border-black/10">
                 <input
