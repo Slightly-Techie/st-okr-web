@@ -50,7 +50,7 @@ const CreateCompany = () => {
 
   return (
     <PageWrapper title="Create Company - OKR">
-      <main className="page-container">
+      <main className="createCompany-page-container">
         <img src={Logo} alt="okr-logo" className="logo" />
 
         <div>
