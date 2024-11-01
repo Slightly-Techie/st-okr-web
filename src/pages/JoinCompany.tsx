@@ -3,7 +3,7 @@ import CompanyTypes from "@/components/companies/companyTypes";
 import Organizations from "@/components/companies/organizations";
 import Packages from "@/components/companies/packages";
 import PageWrapper from "@/components/ui/wrapper";
-import { Search } from "lucide-react";
+// import { Search } from "lucide-react";
 
 export default function JoinCompany() {
   return (
@@ -31,10 +31,10 @@ export default function JoinCompany() {
                   className="w-full bg-[#F4F4F4] rounded-t-lg outline-none py-3 px-11"
                   placeholder="Search Organization"
                 />
-                <Search
+                {/* <Search
                   size={18}
                   className="absolute opacity-60 left-4 bottom-[15px]"
-                />
+                /> */}
               </div>
               <CompanyTypes />
             </div>
