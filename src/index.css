@@ -125,7 +125,7 @@
     @apply shadow-none;
   }
 
-  button[type="submit"] {
-    @apply mt-2 bg-[#047358] px-3 py-4 font-bold hover:bg-opacity-90;
+  .primary-button {
+    @apply bg-[#047358] px-3 py-4 font-bold hover:bg-primary hover:bg-opacity-90 text-white rounded-full;
   }
 }
