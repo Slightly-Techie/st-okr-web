@@ -4,6 +4,7 @@ import Navbar from "@/components/homepage/navbar";
 import CreateCompany from "@/pages/CreateCompany";
 import { createBrowserRouter } from "react-router-dom";
 import JoinCompany from "./pages/JoinCompany";
+import InviteOthers from "./pages/InviteOthers";
 
 export const APP_ROUTER = createBrowserRouter([
   // Routes for the landing page
@@ -33,5 +34,10 @@ export const APP_ROUTER = createBrowserRouter([
   {
     path: "join-company",
     element: <JoinCompany />,
+  },
+
+  {
+    path: "invite-others",
+    element: <InviteOthers />,
   },
 ]);

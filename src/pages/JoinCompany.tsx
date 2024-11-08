@@ -5,6 +5,7 @@ import Packages from "@/components/companies/packages";
 import PageWrapper from "@/components/ui/wrapper";
 import { Search } from "lucide-react";
 
+
 export default function JoinCompany() {
   return (
     <PageWrapper title="Join Company - OKR">
