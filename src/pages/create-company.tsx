@@ -21,7 +21,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import CreateCompanySuccess from "./CreateCompanySuccess";
+import CreateCompanySuccess from "./create-company-success";
 
 // Dummy value
 const companyTypes = [{ value: "finance", label: "Finance" }];

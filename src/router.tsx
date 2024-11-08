@@ -1,10 +1,10 @@
 import AuthPage from "@/components/auth/auth";
 import HomePage from "@/components/homepage/homepage";
 import Navbar from "@/components/homepage/navbar";
-import CreateCompany from "@/pages/CreateCompany";
+import CreateCompany from "@/pages/create-company";
 import { createBrowserRouter } from "react-router-dom";
-import JoinCompany from "./pages/JoinCompany";
-import InviteOthers from "./pages/InviteOthers";
+import InviteOthers from "./pages/invite-others";
+import JoinCompany from "./pages/join-company";
 
 export const APP_ROUTER = createBrowserRouter([
   // Routes for the landing page

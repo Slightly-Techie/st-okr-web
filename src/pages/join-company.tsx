@@ -1,10 +1,9 @@
 import Logo from "@/assets/Logo.svg";
-import CompanyTypes from "@/components/companies/companyTypes";
+import CompanyTypes from "@/components/companies/company-types";
 import Organizations from "@/components/companies/organizations";
 import Packages from "@/components/companies/packages";
 import PageWrapper from "@/components/ui/wrapper";
 import { Search } from "lucide-react";
-
 
 export default function JoinCompany() {
   return (
