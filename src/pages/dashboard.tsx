@@ -6,11 +6,11 @@ export default function Dashboard() {
   return (
     <PageWrapper title="Dashboard - OKR">
       <div className="flex">
-        <aside className="w-1/4 lg:w-[12vw] border-r border-gray-200 h-screen sticky top-0">
+        <aside className="w-1/4 lg:w-1/6 border-r border-gray-200 h-screen sticky top-0">
           <DashboardSidebar />
         </aside>
         <div className="flex-1">
-          <header className="bg-white shadow-sm sticky top-0 z-10">
+          <header className="bg-white sticky top-0 z-10">
             <DashboardHeader />
           </header>
           <main className="p-6 space-y-6">

@@ -12,7 +12,7 @@ export default function DashboardHeader() {
       <div className="flex items-center gap-6">
         <button className="bg-[#F4F4F4] p-1.5 rounded-full relative text-white">
           <MdOutlineNotificationImportant size={20}/>
-          <div className="absolute flex items-center justify-center -top-2 p-1 -right-2 size-4 rounded-full bg-red-500">
+          <div className="absolute flex items-center justify-center -top-1.5 p-1 -right-1.5 size-4 rounded-full bg-red-500">
             <span className="text-xs text-white">2</span>
           </div>
         </button>
