@@ -126,6 +126,16 @@
   }
 
   .primary-button {
-    @apply bg-[#047358] px-3 py-4 font-bold hover:bg-primary hover:bg-opacity-90 text-white rounded-full;
+    @apply rounded-full bg-[#047358] px-3 py-4 font-bold text-white hover:bg-primary hover:bg-opacity-90;
   }
+}
+
+#overall-okr-progress .recharts-cartesian-grid-vertical line:last-of-type {
+  display: none;
+}
+
+#overall-okr-progress .recharts-text tspan {
+  font-size: 12px;
+  font-weight: 400;
+  fill: rgba(0, 0, 0, 0.6) !important;
 }
