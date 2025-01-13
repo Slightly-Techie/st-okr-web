@@ -5,6 +5,7 @@ import CreateCompany from "@/pages/create-company";
 import { createBrowserRouter } from "react-router-dom";
 import InviteOthers from "./pages/invite-others";
 import JoinCompany from "./pages/join-company";
+import Dashboard from "./pages/dashboard";
 
 export const APP_ROUTER = createBrowserRouter([
   // Routes for the landing page
@@ -39,5 +40,10 @@ export const APP_ROUTER = createBrowserRouter([
   {
     path: "invite-others",
     element: <InviteOthers />,
+  },
+
+  {
+    path: "dashboard",
+    element: <Dashboard />,
   },
 ]);
