@@ -126,7 +126,7 @@
   }
 
   .primary-button {
-    @apply rounded-full bg-[#047358] px-3 py-4 font-bold text-white hover:bg-primary hover:bg-opacity-90;
+    @apply bg-[#047358] px-3 py-4 font-bold hover:bg-primary hover:bg-opacity-90 text-white rounded-full;
   }
 }
 
@@ -138,4 +138,25 @@
   font-size: 12px;
   font-weight: 400;
   fill: rgba(0, 0, 0, 0.6) !important;
+}
+
+#group-performance-chart .recharts-cartesian-grid-horizontal line:last-of-type {
+  display: none;
+}
+
+#group-performance-chart .recharts-cartesian-axis-ticks tspan {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks tspan {
+  font-size: 12px;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick:first-of-type tspan {
+  fill: #FF3B30;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick:last-of-type tspan {
+  fill: #1C76FD;
 }
