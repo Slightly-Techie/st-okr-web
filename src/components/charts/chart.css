@@ -1,0 +1,87 @@
+#overall-okr-progress .recharts-cartesian-grid-vertical line:last-of-type {
+  display: none;
+}
+
+#overall-okr-progress .recharts-text tspan {
+  font-size: 12px;
+  font-weight: 400;
+  fill: rgba(0, 0, 0, 0.6) !important;
+}
+
+#overall-okr-progress .desc {
+	@apply p-2 bg-[#fafafa] border border-[#0000001a] rounded-full flex items-center text-xs text-[#00000080] font-normal;
+}
+
+#overall-okr-progress .desc .percent {
+	@apply text-[#047358] font-[400];
+}
+
+#overall-okr-progress .desc .text {
+	@apply font-[400] text-[#0000008c];
+}
+
+#overall-okr-progress .card-content {
+	@apply p-0 pr-6 pb-6;
+}
+
+#overall-okr-progress,
+#group-performance-chart {
+	@apply w-[700px] shadow-none border-[#0000001A];
+}
+
+#group-performance-chart .recharts-cartesian-grid-horizontal line:last-of-type {
+  display: none;
+}
+
+#group-performance-chart .recharts-cartesian-axis-ticks tspan {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks tspan {
+  font-size: 12px;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick:first-of-type tspan {
+  fill: #FF3B30;
+}
+
+#group-performance-chart .yAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick:last-of-type tspan {
+  fill: #1C76FD;
+}
+
+#group-performance-chart .card-content {
+	@apply p-6 pt-0;
+}
+
+.card-header {
+	@apply justify-between flex-row space-y-0 items-start;
+}
+
+.card-title {
+	@apply font-[400] text-sm;
+}
+
+.card-title h2 {
+	@apply font-[400] text-base text-[#00000099];
+}
+
+.card-title .completion-level {
+	@apply mb-3 mt-1 ml-[2px] text-[#00000090] font-[400] text-sm;
+}
+
+.card-title .completion-level .level {
+	@apply tracking-[3px] text-[28px] font-bold leading-none text-[#047358];
+}
+
+.card-tile .completion-level .text {
+	@apply ml-[2px] text-[#00000090] font-[400] text-sm;
+}
+
+.card-title .positive-progress {
+	@apply text-[#48BB78];
+}
+
+.card-title .last-check {
+	@apply text-[#00000099] font-[400];
+}

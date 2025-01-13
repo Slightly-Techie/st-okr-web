@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ChartContainer } from "@/components/ui/chart";
+import "./chart.css";
 
 interface ChartData {
   progress: string;
@@ -42,31 +43,31 @@ const chartConfig: ChartConfigType = {
 
 const ProgressChart = () => {
   return (
-    <Card
-      id="overall-okr-progress"
-      className="w-[700px] shadow-none border-[#0000001A]"
-    >
-      <CardHeader className="justify-between flex-row space-y-0 items-start">
-        <CardTitle className="font-normal text-sm text-[#00000099]">
+    <Card id="overall-okr-progress">
+      <CardHeader className="card-header">
+        <CardTitle className="card-title">
           <h2>Overall OKR Progress</h2>
-          <p className="mb-3 mt-1">
-            <span className="text-[28px] font-bold leading-none text-[#047358]">
-              15
-            </span>{" "}
-            <span className="text-[#00000090] font-normal">Completed</span>
+          <p className="completion-level">
+            <span className="level">15</span>{" "}
+            <span className="text">Completed</span>
           </p>
           <p>
-            <TfiArrowUp className="inline-block fill-[#48BB78]" />{" "}
-            <TfiArrowDown className="inline-block fill-[#F54721]" />{" "}
-            <span className="text-[#48BB78]">(+45%) more</span> Last 3 months
+            <span className="negative-progress">
+              <TfiArrowDown className="inline-block fill-[#F54721]" />
+            </span>{" "}
+            <span className="positive-progress">
+              <TfiArrowUp className="inline-block fill-[#48BB78]" /> (+45%) more
+            </span>{" "}
+            <span className="last-check">Last 3 months</span>
           </p>
         </CardTitle>
-        <CardDescription className="p-2 bg-[#fafafa] border border-[#0000001a] rounded-full flex items-center text-xs text-[#00000080] font-normal">
-          <span className="text-[#047358]">81%</span> &nbsp;Average Completion
-          Rate
+        <CardDescription className="desc">
+          <span className="percent">81%</span> &nbsp;
+          <span className="text">Average Completion Rate</span>
         </CardDescription>
       </CardHeader>
-      <CardContent className="p-0 pr-6 pb-6">
+
+      <CardContent className="card-content">
         <ChartContainer config={chartConfig}>
           <LineChart
             data={chartData}
