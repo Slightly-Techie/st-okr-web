@@ -50,18 +50,25 @@ const PerformanceChart = () => {
       className="w-[700px] shadow-none border-[#0000001A]"
     >
       <CardHeader className="justify-between flex-row space-y-0 items-start">
-        <CardTitle className="font-normal text-sm text-[#00000099]">
-          <h2>Department/Group Performance Chart</h2>
+        <CardTitle className="font-[400] text-sm">
+          <h2 className="font-[400] text-base text-[#00000099]">
+            Department/Group Performance Chart
+          </h2>
           <p className="mb-3 mt-1">
-            <span className="text-[28px] font-bold leading-none text-[#047358]">
+            <span className="tracking-[3px] text-[28px] font-bold leading-none text-[#047358]">
               15
             </span>{" "}
-            <span className="text-[#00000090] font-normal">Completed</span>
+            <span className="ml-[2px] text-[#00000090] font-[400] text-sm">
+              Completed
+            </span>
           </p>
           <p>
-            <TfiArrowUp className="inline-block fill-[#48BB78]" />{" "}
             <TfiArrowDown className="inline-block fill-[#F54721]" />{" "}
-            <span className="text-[#48BB78]">(+45%) more</span> Last 3 months
+            <span>
+              <TfiArrowUp className="inline-block fill-[#48BB78]" />{" "}
+              <span className="text-[#48BB78]">(+45%) more</span>
+            </span>{" "}
+            <span className="text-[#00000099] font-[400]">Last 3 months</span>
           </p>
         </CardTitle>
       </CardHeader>

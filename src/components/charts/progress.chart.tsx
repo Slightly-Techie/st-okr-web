@@ -47,23 +47,32 @@ const ProgressChart = () => {
       className="w-[700px] shadow-none border-[#0000001A]"
     >
       <CardHeader className="justify-between flex-row space-y-0 items-start">
-        <CardTitle className="font-normal text-sm text-[#00000099]">
-          <h2>Overall OKR Progress</h2>
+        <CardTitle className="font-[400] text-sm">
+          <h2 className="font-[400] text-base text-[#00000099]">
+            Overall OKR Progress
+          </h2>
           <p className="mb-3 mt-1">
-            <span className="text-[28px] font-bold leading-none text-[#047358]">
+            <span className="tracking-[3px] text-[28px] font-bold leading-none text-[#047358]">
               15
             </span>{" "}
-            <span className="text-[#00000090] font-normal">Completed</span>
+            <span className="ml-[2px] text-[#00000090] font-[400] text-sm">
+              Completed
+            </span>
           </p>
           <p>
-            <TfiArrowUp className="inline-block fill-[#48BB78]" />{" "}
             <TfiArrowDown className="inline-block fill-[#F54721]" />{" "}
-            <span className="text-[#48BB78]">(+45%) more</span> Last 3 months
+            <span>
+              <TfiArrowUp className="inline-block fill-[#48BB78]" />{" "}
+              <span className="text-[#48BB78]">(+45%) more</span>
+            </span>{" "}
+            <span className="text-[#00000099] font-[400]">Last 3 months</span>
           </p>
         </CardTitle>
         <CardDescription className="p-2 bg-[#fafafa] border border-[#0000001a] rounded-full flex items-center text-xs text-[#00000080] font-normal">
-          <span className="text-[#047358]">81%</span> &nbsp;Average Completion
-          Rate
+          <span className="text-[#047358] font-[400]">81%</span> &nbsp;{" "}
+          <span className="font-[400] text-[#0000008c]">
+            Average Completion Rate
+          </span>
         </CardDescription>
       </CardHeader>
       <CardContent className="p-0 pr-6 pb-6">
